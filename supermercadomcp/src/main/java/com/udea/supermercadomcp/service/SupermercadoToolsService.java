@@ -14,6 +14,7 @@ import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import com.udea.supermercadomcp.dto.BusquedaCliente;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -80,14 +81,16 @@ public class SupermercadoToolsService {
                 .orElseGet(() -> clientes.save(new Cliente(nombre.trim(), telefono.trim(), direccion.trim())));
     }
 
-    @Tool(description = "Busca un cliente registrado por su número de teléfono.")
-    public Cliente buscarCliente(
+    @Tool(description = "Busca un cliente registrado por su teléfono. Devuelve encontrado=false si no existe; en ese caso hay que pedir nombre y dirección y usar registrarCliente.")
+    public BusquedaCliente buscarCliente(
             @ToolParam(description = "Teléfono del cliente") String telefono) {
         if (telefono == null || telefono.isBlank()) {
             throw new IllegalArgumentException("El teléfono es obligatorio");
         }
         return clientes.findByTelefono(telefono.trim())
-                .orElseThrow(() -> new IllegalArgumentException("No existe un cliente con el teléfono " + telefono));
+                .map(c -> new BusquedaCliente(true, c, "Cliente encontrado"))
+                .orElse(new BusquedaCliente(false, null,
+                        "No existe un cliente con ese teléfono"));
     }
 
     // ===================== PEDIDOS =====================
