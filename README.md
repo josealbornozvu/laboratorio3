@@ -7,6 +7,8 @@ Chatbot que permite hacer pedidos de supermercado a domicilio mediante lenguaje 
 El chatbot (cliente) consume, a través del protocolo **MCP (Model Context Protocol)**, un servidor
 que publica operaciones de negocio sobre una base de datos **MySQL**.
 
+Enlace repositorio: https://github.com/josealbornozvu/laboratorio3.git
+
 ---
 
 ## 1. Objetivo
