@@ -1,0 +1,540 @@
+2026-11-16T01:47:13.018-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Starting Lab3demomcpApplication using Java 24.0.1 with PID 16104 (C:\Users\ASUS\Downloads\lab3demomcp\target\classes started by ASUS in C:\Users\ASUS\Downloads\lab3demomcp)
+2026-11-16T01:47:13.020-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T01:47:13.072-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-16T01:47:13.073-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-16T01:47:13.708-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-16T01:47:13.875-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interface.
+2026-11-16T01:47:14.156-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:47:14.158-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:47:14.177-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:47:14.448-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2026-11-16T01:47:14.464-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T01:47:14.465-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-11-16T01:47:14.510-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T01:47:14.511-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2026-11-16T01:47:14.609-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T01:47:16.424-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-16T01:47:16.496-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-11-16T01:47:16.533-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-16T01:47:16.781-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-16T01:47:16.815-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T01:47:17.830-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2026-11-16T01:47:17.831-05:00 ERROR 16104 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2026-11-16T01:47:17.833-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.7.jar:3.4.7]
+	at com.udea.lab3demomcp.Lab3demomcpApplication.main(Lab3demomcpApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.7.jar:3.4.7]
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	... 38 common frames omitted
+
+2026-11-16T01:47:17.868-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-16T01:47:17.880-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-16T01:47:18.837-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-16T01:47:18.861-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T01:47:19.875-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2026-11-16T01:47:19.876-05:00 ERROR 16104 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2026-11-16T01:47:19.885-05:00 ERROR 16104 --- [lab3demomcp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2026-11-16T01:47:19.887-05:00  WARN 16104 --- [lab3demomcp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2026-11-16T01:47:19.892-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-16T01:47:19.915-05:00  INFO 16104 --- [lab3demomcp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-16T01:47:19.934-05:00 ERROR 16104 --- [lab3demomcp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.7.jar:3.4.7]
+	at com.udea.lab3demomcp.Lab3demomcpApplication.main(Lab3demomcpApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.7.jar:3.4.7]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.8.jar:6.2.8]
+	... 22 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	... 43 common frames omitted
+
+2026-11-16T01:47:59.394-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Starting Lab3demomcpApplication using Java 24.0.1 with PID 2868 (C:\Users\ASUS\Downloads\lab3demomcp\target\classes started by ASUS in C:\Users\ASUS\Downloads\lab3demomcp)
+2026-11-16T01:47:59.397-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T01:47:59.449-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-16T01:47:59.449-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-16T01:48:00.084-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-16T01:48:00.211-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2026-11-16T01:48:00.554-05:00  WARN 2868 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:48:00.556-05:00  WARN 2868 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:48:00.573-05:00  WARN 2868 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T01:48:00.925-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2026-11-16T01:48:00.943-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T01:48:00.944-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-11-16T01:48:00.994-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T01:48:00.995-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1545 ms
+2026-11-16T01:48:01.090-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T01:48:01.266-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fa4145a
+2026-11-16T01:48:01.268-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-16T01:48:01.362-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-16T01:48:01.408-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-11-16T01:48:01.453-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-16T01:48:01.764-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-16T01:48:01.898-05:00  WARN 2868 --- [lab3demomcp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-16T01:48:01.917-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-16T01:48:03.165-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-16T01:48:03.211-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-16T01:48:04.168-05:00  WARN 2868 --- [lab3demomcp] [restartedMain] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2026-11-16T01:48:04.180-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-11-16T01:48:04.182-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 7
+2026-11-16T01:48:04.183-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-11-16T01:48:04.184-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-11-16T01:48:04.184-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-11-16T01:48:04.185-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-11-16T01:48:04.335-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-16T01:48:04.371-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2026-11-16T01:48:04.378-05:00  INFO 2868 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Started Lab3demomcpApplication in 5.423 seconds (process running for 5.823)
+2026-11-16T01:51:35.734-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T01:51:35.734-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T01:51:35.736-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-16T01:51:35.790-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-03-26, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=curl, title=null, version=1.0]
+2026-11-16T01:52:03.688-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-4] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-03-26, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=curl, title=null, version=1.0]
+2026-11-16T01:54:29.491-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-6] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-03-26, Capabilities: ClientCapabilities[experimental=null, roots=RootCapabilities[listChanged=true], sampling=Sampling[], elicitation=null], Info: Implementation[name=mcp-inspector, title=null, version=0.12.0]
+2026-11-16T01:54:56.414-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: findTareas
+2026-11-16T01:54:56.730-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: findTareas
+2026-11-16T01:54:56.730-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:55:00.537-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T01:55:14.015-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: findTareas
+2026-11-16T01:55:14.015-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: findTareas
+2026-11-16T01:55:14.015-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:55:19.599-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listPendientes
+2026-11-16T01:55:19.623-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listPendientes
+2026-11-16T01:55:19.623-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:55:31.218-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listTareas
+2026-11-16T01:55:31.248-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listTareas
+2026-11-16T01:55:31.248-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:55:50.259-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-2] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T01:56:11.434-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listTareas
+2026-11-16T01:56:11.434-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listTareas
+2026-11-16T01:56:11.434-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:56:19.986-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: findTareas
+2026-11-16T01:56:19.992-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: findTareas
+2026-11-16T01:56:19.992-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:56:25.739-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listPendientes
+2026-11-16T01:56:25.750-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listPendientes
+2026-11-16T01:56:25.750-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:57:23.187-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T01:57:23.253-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: crearTarea
+2026-11-16T01:57:23.253-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:57:35.303-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: marcarCompletada
+2026-11-16T01:59:09.391-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: marcarCompletada
+2026-11-16T01:59:09.440-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: marcarCompletada
+2026-11-16T01:59:09.440-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T01:59:57.263-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: updateTarea
+2026-11-16T01:59:57.293-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: updateTarea
+2026-11-16T01:59:57.293-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:00:03.810-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: eliminarTarea
+2026-11-16T02:00:04.435-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: eliminarTarea
+2026-11-16T02:00:04.435-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:00:59.613-05:00  INFO 2868 --- [lab3demomcp] [http-nio-8088-exec-2] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-03-26, Capabilities: ClientCapabilities[experimental=null, roots=RootCapabilities[listChanged=true], sampling=Sampling[], elicitation=null], Info: Implementation[name=mcp-inspector, title=null, version=0.12.0]
+2026-11-16T02:01:08.645-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listTareas
+2026-11-16T02:01:08.645-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listTareas
+2026-11-16T02:01:08.645-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-8] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:01:55.518-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listPendientes
+2026-11-16T02:01:55.518-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listPendientes
+2026-11-16T02:01:55.518-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:02:28.448-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: findTareas
+2026-11-16T02:02:28.448-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: findTareas
+2026-11-16T02:02:28.448-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:03:11.500-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T02:03:11.519-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: crearTarea
+2026-11-16T02:03:11.519-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-10] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:03:38.275-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: findTareas
+2026-11-16T02:03:38.285-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: findTareas
+2026-11-16T02:03:38.285-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:04:02.771-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: marcarCompletada
+2026-11-16T02:04:09.286-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-2] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: marcarCompletada
+2026-11-16T02:04:09.304-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-2] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: marcarCompletada
+2026-11-16T02:04:09.304-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-2] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:05:08.555-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: updateTarea
+2026-11-16T02:05:08.588-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: updateTarea
+2026-11-16T02:05:08.588-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-3] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:05:30.430-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: eliminarTarea
+2026-11-16T02:05:30.458-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: eliminarTarea
+2026-11-16T02:05:30.458-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:08:03.030-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T02:08:03.087-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: crearTarea
+2026-11-16T02:08:03.087-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-9] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:08:18.828-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: eliminarTarea
+2026-11-16T02:08:18.869-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: eliminarTarea
+2026-11-16T02:08:18.878-05:00 DEBUG 2868 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:25:39.810-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Starting Lab3demomcpApplication using Java 24.0.1 with PID 32920 (C:\Users\ASUS\Downloads\lab3demomcp\target\classes started by ASUS in C:\Users\ASUS\Downloads\lab3demomcp)
+2026-11-16T02:25:39.812-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T02:25:39.858-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-16T02:25:39.858-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-16T02:25:40.469-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-16T02:25:40.626-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 1 JPA repository interface.
+2026-11-16T02:25:40.895-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:25:40.897-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:25:40.905-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:25:41.198-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2026-11-16T02:25:41.215-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T02:25:41.217-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-11-16T02:25:41.271-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T02:25:41.271-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1412 ms
+2026-11-16T02:25:41.357-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T02:25:43.177-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-16T02:25:43.221-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-11-16T02:25:43.250-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-16T02:25:43.491-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-16T02:25:43.529-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T02:25:44.547-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2026-11-16T02:25:44.548-05:00 ERROR 32920 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2026-11-16T02:25:44.551-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.7.jar:3.4.7]
+	at com.udea.lab3demomcp.Lab3demomcpApplication.main(Lab3demomcpApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.7.jar:3.4.7]
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	... 38 common frames omitted
+
+2026-11-16T02:25:44.577-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-16T02:25:44.590-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-16T02:25:45.408-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-16T02:25:45.430-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T02:25:46.446-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1045, SQLState: 28000
+2026-11-16T02:25:46.446-05:00 ERROR 32920 --- [lab3demomcp] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Access denied for user 'root'@'localhost' (using password: YES)
+2026-11-16T02:25:46.456-05:00 ERROR 32920 --- [lab3demomcp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2026-11-16T02:25:46.458-05:00  WARN 32920 --- [lab3demomcp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+2026-11-16T02:25:46.465-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-16T02:25:46.498-05:00  INFO 32920 --- [lab3demomcp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-16T02:25:46.541-05:00 ERROR 32920 --- [lab3demomcp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.7.jar:3.4.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.7.jar:3.4.7]
+	at com.udea.lab3demomcp.Lab3demomcpApplication.main(Lab3demomcpApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.7.jar:3.4.7]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.8.jar:6.2.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.8.jar:6.2.8]
+	... 22 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]
+	... 43 common frames omitted
+
+2026-11-16T02:26:14.164-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Starting Lab3demomcpApplication using Java 24.0.1 with PID 16848 (C:\Users\ASUS\Downloads\lab3demomcp\target\classes started by ASUS in C:\Users\ASUS\Downloads\lab3demomcp)
+2026-11-16T02:26:14.165-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T02:26:14.212-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-16T02:26:14.212-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-16T02:26:14.867-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-16T02:26:15.004-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2026-11-16T02:26:15.247-05:00  WARN 16848 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:26:15.251-05:00  WARN 16848 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:26:15.262-05:00  WARN 16848 --- [lab3demomcp] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-16T02:26:15.538-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2026-11-16T02:26:15.552-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T02:26:15.553-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-11-16T02:26:15.596-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T02:26:15.597-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1384 ms
+2026-11-16T02:26:15.683-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T02:26:15.855-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f2356
+2026-11-16T02:26:15.857-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-16T02:26:15.950-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-16T02:26:15.997-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-11-16T02:26:16.038-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-16T02:26:16.327-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-16T02:26:16.399-05:00  WARN 16848 --- [lab3demomcp] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-16T02:26:16.414-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-16T02:26:17.160-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-16T02:26:17.228-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-16T02:26:18.070-05:00  WARN 16848 --- [lab3demomcp] [restartedMain] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2026-11-16T02:26:18.079-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-11-16T02:26:18.080-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 7
+2026-11-16T02:26:18.080-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-11-16T02:26:18.081-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-11-16T02:26:18.081-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-11-16T02:26:18.082-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-11-16T02:26:18.231-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-16T02:26:18.262-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2026-11-16T02:26:18.270-05:00  INFO 16848 --- [lab3demomcp] [restartedMain] c.u.lab3demomcp.Lab3demomcpApplication   : Started Lab3demomcpApplication in 4.523 seconds (process running for 4.923)
+2026-11-16T02:26:20.468-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T02:26:20.469-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T02:26:20.470-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-16T02:26:20.718-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-5] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-11-25, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=mcp-remote-fallback-test, title=null, version=0.0.0]
+2026-11-16T02:26:20.720-05:00  WARN 16848 --- [lab3demomcp] [http-nio-8088-exec-5] i.m.server.McpAsyncServer                : Client requested unsupported protocol version: 2025-11-25, so the server will suggest the 2025-06-18 version instead
+2026-11-16T02:27:31.940-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-2] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-11-25, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=mcp-remote-fallback-test, title=null, version=0.0.0]
+2026-11-16T02:27:31.940-05:00  WARN 16848 --- [lab3demomcp] [http-nio-8088-exec-2] i.m.server.McpAsyncServer                : Client requested unsupported protocol version: 2025-11-25, so the server will suggest the 2025-06-18 version instead
+2026-11-16T02:27:31.965-05:00  INFO 16848 --- [lab3demomcp] [http-nio-8088-exec-5] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-11-25, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=claude-ai (via mcp-remote 0.16.6), title=null, version=0.1.0]
+2026-11-16T02:27:31.965-05:00  WARN 16848 --- [lab3demomcp] [http-nio-8088-exec-5] i.m.server.McpAsyncServer                : Client requested unsupported protocol version: 2025-11-25, so the server will suggest the 2025-06-18 version instead
+2026-11-16T02:28:43.306-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: listPendientes
+2026-11-16T02:28:43.497-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: listPendientes
+2026-11-16T02:28:43.497-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-4] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:29:03.558-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: crearTarea
+2026-11-16T02:29:03.666-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: crearTarea
+2026-11-16T02:29:03.670-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-5] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:29:19.860-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: marcarCompletada
+2026-11-16T02:29:19.899-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: marcarCompletada
+2026-11-16T02:29:19.899-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-6] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:29:31.747-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Starting execution of tool: eliminarTarea
+2026-11-16T02:29:32.151-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.ai.tool.method.MethodToolCallback    : Successful execution of tool: eliminarTarea
+2026-11-16T02:29:32.151-05:00 DEBUG 16848 --- [lab3demomcp] [http-nio-8088-exec-7] o.s.a.t.e.DefaultToolCallResultConverter : Converting tool result to JSON.
+2026-11-16T02:35:23.940-05:00  INFO 16848 --- [lab3demomcp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
