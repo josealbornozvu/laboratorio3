@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Súper a domicilio · Asistente de pedidos</title>
+<style>
+  :root {
+    --tinta: #14211f;
+    --anaquel: #eef2ef;
+    --papel: #ffffff;
+    --borde: #d3dcd7;
+    --verde: #145c4e;
+    --amarillo: #f5c64a;
+    --tomate: #d9472b;
+    --suave: #5b6b66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e8efec; --anaquel:#0f1a18; --papel:#182623; --borde:#2b3d39; --verde:#2f8f7b; --suave:#9db0aa; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--anaquel); color: var(--tinta);
+    font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+    display: flex; justify-content: center;
+  }
+  .app { width: 100%; max-width: 760px; height: 100%; display: flex; flex-direction: column; background: var(--papel); border-inline: 1px solid var(--borde); }
+  header { padding: 18px 20px 14px; border-bottom: 4px solid var(--amarillo); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  header h1 { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em; }
+  header p { margin: 2px 0 0; font-size: .88rem; color: var(--suave); }
+  .nueva { font: inherit; font-size: .85rem; padding: 7px 12px; border: 1px solid var(--borde); background: transparent; color: var(--tinta); border-radius: 8px; cursor: pointer; }
+  .nueva:hover { border-color: var(--verde); }
+  #mensajes { flex: 1; overflow-y: auto; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; }
+  .msg { max-width: 82%; padding: 10px 14px; border-radius: 14px; line-height: 1.45; font-size: .97rem; overflow-wrap: anywhere; }
+  .msg p { margin: 0 0 6px; } .msg p:last-child { margin-bottom: 0; }
+  .msg ul { margin: 4px 0 6px; padding-left: 20px; }
+  .bot { align-self: flex-start; background: var(--anaquel); border: 1px solid var(--borde); border-bottom-left-radius: 4px; }
+  .yo { align-self: flex-end; background: var(--verde); color: #fff; border-bottom-right-radius: 4px; }
+  .error { align-self: flex-start; border: 1px solid var(--tomate); color: var(--tomate); background: transparent; }
+  .pensando { color: var(--suave); font-style: italic; }
+  .pensando::after { content: "…"; animation: puntos 1.2s steps(4, end) infinite; display: inline-block; width: 1em; overflow: hidden; vertical-align: bottom; }
+  @keyframes puntos { 0% { width: 0; } 100% { width: 1em; } }
+  .sugerencias { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px 12px; }
+  .sugerencias button { font: inherit; font-size: .88rem; padding: 7px 12px; border: 1px solid var(--verde); background: transparent; color: var(--verde); border-radius: 999px; cursor: pointer; }
+  .sugerencias button:hover { background: var(--verde); color: #fff; }
+  form { display: flex; gap: 10px; padding: 12px 20px 18px; border-top: 1px solid var(--borde); }
+  textarea { flex: 1; resize: none; font: inherit; padding: 10px 12px; border: 1px solid var(--borde); border-radius: 10px; background: var(--papel); color: var(--tinta); max-height: 120px; }
+  .enviar { font: inherit; font-weight: 700; padding: 0 20px; border: 0; border-radius: 10px; background: var(--tomate); color: #fff; cursor: pointer; }
+  .enviar:disabled { opacity: .5; cursor: wait; }
+  :focus-visible { outline: 3px solid var(--amarillo); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .pensando::after { animation: none; } }
+  @media (max-width: 520px) { .msg { max-width: 92%; } header h1 { font-size: 1.15rem; } }
+</style>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div>
+      <h1>Súper a domicilio</h1>
+      <p>Pide tu mercado en una conversación.</p>
+    </div>
+    <button class="nueva" id="nueva" type="button">Nueva conversación</button>
+  </header>
+
+  <section id="mensajes" aria-live="polite"></section>
+
+  <div class="sugerencias" id="sugerencias">
+    <button type="button">¿Qué productos de lácteos tienen?</button>
+    <button type="button">Quiero hacer un pedido</button>
+    <button type="button">¿Cuánto cuesta el arroz?</button>
+  </div>
+
+  <form id="form">
+    <textarea id="entrada" rows="1" placeholder="Escribe tu mensaje" aria-label="Mensaje" required></textarea>
+    <button class="enviar" id="enviar" type="submit">Enviar</button>
+  </form>
+</main>
+
+<script>
+  const lista = document.getElementById('mensajes');
+  const form = document.getElementById('form');
+  const entrada = document.getElementById('entrada');
+  const enviar = document.getElementById('enviar');
+  const sugerencias = document.getElementById('sugerencias');
+  let sessionId = crypto.randomUUID();
+
+  const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+
+  // Convierte el texto simple del modelo (negrita y listas con "- ") a HTML seguro.
+  function render(texto) {
+    const lineas = esc(texto).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').split('\n');
+    let html = '', enLista = false;
+    for (const l of lineas) {
+      const m = l.match(/^\s*[-*•]\s+(.*)/);
+      if (m) { if (!enLista) { html += '<ul>'; enLista = true; } html += '<li>' + m[1] + '</li>'; }
+      else { if (enLista) { html += '</ul>'; enLista = false; } if (l.trim()) html += '<p>' + l + '</p>'; }
+    }
+    return enLista ? html + '</ul>' : html;
+  }
+
+  function agregar(clase, contenido, esHtml) {
+    const d = document.createElement('div');
+    d.className = 'msg ' + clase;
+    if (esHtml) d.innerHTML = contenido; else d.textContent = contenido;
+    lista.appendChild(d);
+    lista.scrollTop = lista.scrollHeight;
+    return d;
+  }
+
+  function saludo() {
+    lista.innerHTML = '';
+    agregar('bot', render('Hola, soy el asistente del supermercado. Puedo mostrarte productos y precios, y armar tu pedido a domicilio. ¿Qué necesitas?'), true);
+    sugerencias.style.display = 'flex';
+  }
+
+  async function mandar(texto) {
+    sugerencias.style.display = 'none';
+    agregar('yo', texto, false);
+    const espera = agregar('bot pensando', 'Consultando el catálogo', false);
+    enviar.disabled = true;
+    try {
+      const r = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId, mensaje: texto })
+      });
+      const datos = await r.json();
+      espera.remove();
+      if (r.ok && datos.respuesta) agregar('bot', render(datos.respuesta), true);
+      else agregar('error', datos.error || 'No se pudo obtener respuesta.', false);
+    } catch (e) {
+      espera.remove();
+      agregar('error', 'No hay conexión con el chatbot. Verifica que esté en ejecución.', false);
+    } finally {
+      enviar.disabled = false;
+      entrada.focus();
+    }
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const t = entrada.value.trim();
+    if (!t) return;
+    entrada.value = '';
+    mandar(t);
+  });
+  entrada.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+  sugerencias.addEventListener('click', e => { if (e.target.tagName === 'BUTTON') mandar(e.target.textContent); });
+  document.getElementById('nueva').addEventListener('click', () => { sessionId = crypto.randomUUID(); saludo(); });
+
+  saludo();
+</script>
+</body>
+</html>
